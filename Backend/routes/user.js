@@ -9,9 +9,9 @@ const router = express.Router();
 
 
 
-// router.get('/signup',(req,res) => {
-//     res.send("signup page");
-// })
+router.get('/signup',(req,res) => {
+    res.send("signup page");
+})
 
 router.use(express.json());
 
