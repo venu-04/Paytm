@@ -26,7 +26,7 @@ const handleSubmit = async (event) => {
     .then(response => {
       console.log(response.data);
       localStorage.setItem("token", response.data.token);
-      navigate("/dashboard");
+      navigate("/signin");
     })
     .catch(error => {
       if (error.response) {
