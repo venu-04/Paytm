@@ -12,7 +12,7 @@ const Signin = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8000/user/signin", { username, password });
+      const response = await axios.post("https://paytm-4-whfq.onrender.com/user/signin", { username, password });
       // Assuming the response contains a token for authenticated sessions
       localStorage.setItem("token", response.data.token);
       navigate("/dashboard"); // Redirect to dashboard after successful signin

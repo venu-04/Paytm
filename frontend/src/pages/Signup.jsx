@@ -23,7 +23,7 @@ const handleSubmit = async (event) => {
 
   console.log(formData);
 
-  await axios.post("http://localhost:8000/user/signup", formData)
+  await axios.post("https://paytm-4-whfq.onrender.com/user/signup", formData)
     .then(response => {
       console.log(response.data);
       localStorage.setItem("token", response.data.token);
