@@ -1,7 +1,7 @@
 import express from 'express';
 import authMiddleware from '../middleware.js';
 import { Account } from '../db.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
  const router = express.Router();
 
  router.get('/balance',authMiddleware,async(req,res) => {
