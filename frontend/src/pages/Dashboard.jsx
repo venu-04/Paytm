@@ -32,7 +32,7 @@ export const Dashboard = () => {
         const fetchUsers = async () => {
             if (filter.length >0) { // Set a minimum length for search
                 try {
-                    const response = await axios.get(`http://localhost:8000/user/bulk?filter=${filter}`);
+                    const response = await axios.get(`https://paytm-6.onrender.com/bulk?filter=${filter}`);
                     
                     // Debugging: Log the response to confirm data structure
                     console.log('Fetched users:', response.data);
@@ -55,7 +55,7 @@ export const Dashboard = () => {
         const fetchBalance = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const response = await axios.get("http://localhost:8000/account/balance", {
+                const response = await axios.get("https://paytm-6.onrender.com/account/balance", {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setBalance(response.data.balance);
