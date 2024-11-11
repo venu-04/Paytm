@@ -31,5 +31,5 @@ A React-based application with a modern, professional design inspired by Paytm. 
    git clone https://github.com/your-username/paytm-like-app.git
    cd paytm-like-app
 2.**Install dependencies**
-     ```bash
+  ```bash
      npm install
