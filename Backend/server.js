@@ -4,7 +4,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-    origin: ['https://paytm-eta-umber.vercel.app','http://localhost:5173']
+    origin: ['https://paytm-eta-umber.vercel.app','http://localhost:5173','https://paytm-3hgul76ur-venus-projects-257a9162.vercel.app']
 }))
 // app.use(cors());
 // app.use(cors({
