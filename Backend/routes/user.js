@@ -123,21 +123,24 @@ router.get('/bulk',async(req,res) => { //this is the route to get users from the
     // For example, in the URL http://example.com/search?q=query&filter=type,
     // the query object would be { q: 'query', filter: 'type' }.
     const filter = req.query.filter || "";
+    console.log(filter);
 
 
     const users = await User.find({
-        $or:[{  //this is logical     OR operation that either firstname or lastname contains our query
-            firstName:{$regex:filter},  //$regex is a mongodb operator that allows us to search for a pattern in a string
-            lastName:{$regex:filter}    //i.e if we search for "a" it will return all the users whose firstname or lastname contains "a"
+        $or:[ //this is logical     OR operation that either firstname or lastname contains our query
+            {firstName:{$regex:filter,$options: 'i' }},  //$regex is a mongodb operator that allows us to search for a pattern in a string
+            {lastName:{$regex:filter,$options: 'i' }} ,
+            {username:{$regex:filter,$options: 'i' }} , //i.e if we search for "a" it will return all the users whose firstname or lastname contains "a"
                                          //a is inplace of filter
-        }]
+        ]
     })
-    console.log(users);
+  
 
    res.json({
         user:users.map(user =>({
             firstName:user.firstName,
             lastName:user.lastName,
+            username:user.username,
             userId:user._id
         }))
     })

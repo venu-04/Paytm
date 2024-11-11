@@ -4,8 +4,14 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-    origin: 'https://paytm-eta-umber.vercel.app'
+    origin: ['https://paytm-eta-umber.vercel.app','http://localhost:5173']
 }))
+// app.use(cors());
+// app.use(cors({
+//     origin: ['http://localhost:5173'],
+//     credentials: true,
+// }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/',rootrouter);
@@ -19,4 +25,3 @@ app.get("/",(req,res) => {
 app.listen(8000,()=>{
     console.log("server is running on port 8000");
 })
-
