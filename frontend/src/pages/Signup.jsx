@@ -20,7 +20,7 @@ const Signup = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/user/signup", formData);
+      const response = await axios.post("https://paytm-6.onrender.com/user/signup", formData);
       console.log(response.data);
       localStorage.setItem("token", response.data.token);
       navigate("/signin");

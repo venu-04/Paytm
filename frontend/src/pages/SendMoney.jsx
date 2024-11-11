@@ -55,8 +55,8 @@ export const SendMoney = () => {
         }
 
         try {
-            // const response = await axios.post("https://paytm-4-whfq.onrender.com/account/transfer", {
-                const response = await axios.post("http://localhost:8000/account/transfer", {
+            const response = await axios.post("https://paytm-6.onrender.com/account/transfer", {
+                // const response = await axios.post("http://localhost:8000/account/transfer", {
                 to: id,
                 amount,
                 password
