@@ -51,7 +51,7 @@ const Signup = () => {
               name="username" 
               placeholder="Enter Username" 
               required 
-              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-100" 
+              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-900" 
               value={formData.username} 
               onChange={handleChange} 
             />
@@ -64,7 +64,7 @@ const Signup = () => {
               name="firstName" 
               placeholder="Enter First Name" 
               required 
-              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-100" 
+              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-900" 
               value={formData.firstName} 
               onChange={handleChange} 
             />
@@ -77,7 +77,7 @@ const Signup = () => {
               name="lastName" 
               placeholder="Enter Last Name" 
               required 
-              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-100" 
+              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-900" 
               value={formData.lastName} 
               onChange={handleChange} 
             />
@@ -90,7 +90,7 @@ const Signup = () => {
               name="password" 
               placeholder="Enter Password" 
               required 
-              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-100" 
+              className="mt-1 block w-full bg-transparent border-0 border-b-2 border-gray-400 focus:border-gray-200 focus:ring-0 text-gray-900" 
               value={formData.password} 
               onChange={handleChange} 
             />
@@ -102,7 +102,7 @@ const Signup = () => {
             Sign Up
           </button>
           <p className="mt-4 text-center text-black-400">
-            Already have an account? <Link to="/signin" className="text-gray-400 hover:text-black-400">Sign In</Link>
+            Already have an account? <Link to="/signin" className="text-black-200 font-medium hover:text-black-00">Sign In</Link>
           </p>
         </form>
       </div>
