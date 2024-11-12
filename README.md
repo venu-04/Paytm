@@ -17,19 +17,4 @@ A React-based application with a modern, professional design inspired by Paytm. 
 - **Hosting**: Frontend on Vercel, Backend on Render (or any other cloud provider)
 - **Database**: MongoDB Atlas (or local MongoDB instance)
 
-## Getting Started
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) installed
-- [MongoDB](https://www.mongodb.com/) database set up (either locally or on MongoDB Atlas)
-
-### Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/paytm-like-app.git
-   cd paytm-like-app
- 2.**Install dependencies**
-  ```bash
-     npm install
